@@ -1,0 +1,77 @@
+/* ✅ 注文履歴ページの全体レイアウト */
+.order-history-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.order-history-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* ✅ 注文リスト（テーブル） */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.order-table th, 
+.order-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.order-table thead {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.order-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* ✅ 注文詳細ボタン */
+.details-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    background-color: #555;
+}
+
+/* ✅ スマホ・タブレット対応（レスポンシブ） */
+@media (max-width: 768px) {
+    .order-history-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .order-table th, 
+    .order-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .details-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
