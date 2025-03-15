@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会員情報編集</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/mypage.css">
+    <link rel="stylesheet" href="../CSS/edit_profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JavaScriptのファイル -->
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/HomeController.js" defer></script>
+    <script src="../JS/edit_profile.js" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>会員情報編集</h1>
+        <form id="edit-form">
+            <label for="last-name">姓</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="first-name">名</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">新しいパスワード:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="password_confirm">パスワード確認:</label>
+            <input type="password" id="password_confirm" name="password_confirm">
+
+            <label for="birth_date">生年月日</label>
+            <div class="birthdate-container">
+              <select id="year"></select>
+              <select id="month"></select>
+              <select id="day"></select>
+            </div>
+        
+        <label>性別</label>
+            <div class="gender-container">
+                <label><input type="radio" name="gender" value="female"> 女性</label>
+                <label><input type="radio" name="gender" value="male"> 男性</label>
+                <label><input type="radio" name="gender" value="other"> その他</label>
+            </div>
+
+            <button type="button" class="update-btn" id="update-btn">更新</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
