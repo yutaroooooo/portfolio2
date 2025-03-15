@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品詳細</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/product_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/HomeController.js" defer></script>
+    <script src="../JS/product_data.js" defer></script>
+    <script src="../JS/favorite.js" defer></script>
+    <script src="../JS/cart_data.js" defer></script>
+</head>
+
+<body>
+    <header></header>
+    <main class="product-detail-container">
+    <!-- 商品画像エリア -->
+    <div class="product-image-container">
+        <div class="image-navigation">
+            <button class="prev-btn">&#8249;</button>
+            <img id="main-product-image" src="" alt="商品画像">
+            <button class="next-btn">&#8250;</button>
+        </div>
+        <div class="thumbnail-container" id="thumbnail-container"></div>
+    </div>
+
+    <!-- 商品情報エリア -->
+    <div class="product-info">
+        <h2 id="product-brand"></h2>
+        <h2 id="product-name"></h2> <!-- 商品名の表示 -->
+        <p id="product-price"></p>
+
+        <!-- サイズ選択エリア -->
+        <div class="size-options" id="size-options"></div>
+
+        <!-- カラーバリエーション -->
+        <div class="color-options" id="color-options"></div>
+
+        <!-- 選択中のカラーとサイズを表示するエリア -->
+        <p>選択カラー: <span id="selected-color">-</span></p>
+        <p>選択サイズ: <span id="selected-size">-</span></p>
+
+        <!-- お気に入りボタン -->
+        <button class="favorite-btn"><i class="fa-regular fa-heart"></i> お気に入りに追加</button>
+
+        <!-- サイズ表 -->
+        <table class="size-table">
+            <thead>
+                <tr>
+                    <th>サイズ</th><th>着丈</th><th>身幅</th><th>袖丈</th>
+                </tr>
+            </thead>
+            <tbody id="size-table-body"></tbody>
+        </table>
+
+        <!-- 素材・原産国 -->
+        <p><strong>素材:</strong> <span id="product-material"></span></p>
+        <p><strong>原産国:</strong> <span id="product-origin"></span></p>
+
+        <!-- カートボタン -->
+        <button id="add-to-cart" class="add-to-cart">カートに入れる</button>
+    </div>
+</main>
+    <footer> </footer>
+</body>
+</html>

@@ -1,0 +1,195 @@
+h2 {
+    font-size: 20px;
+}
+
+.product-detail-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* 画像エリア */
+.product-image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.image-navigation {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-product-image {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn { left: 0; }
+.next-btn { right: 0; }
+
+/* 商品情報エリア */
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* カラーバリエーション */
+.color-options {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.color-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.color-dot.selected {
+    border: 2px solid black;
+}
+
+/* サイズ選択 */
+.size-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.size-btn {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.size-btn.selected {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+/* 選択中のオプションを表示するボックス */
+.selected-options-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.selected-options-box h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.selected-options-box p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* サイズ表 */
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.size-table th, .size-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* カートボタン */
+.add-to-cart {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+/* サムネイル画像 */
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.thumbnail.selected {
+    border: 2px solid black;
+}
+
+/* お気に入りボタン */
+.favorite-btn {
+    margin-left: 0;
+    background: none;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.favorite-btn i {
+    font-size: 18px;
+}
+
+.favorite-btn.active {
+    color: red;
+    border-color: red;
+}
+
+.favorite-btn.active i {
+    font-weight: bold;
+}
