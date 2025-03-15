@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カート</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <script src="../JS/header.js"></script>
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/cart_data.js"></script>
+    <script src="../JS/cart_display.js"></script>
+</head>
+<body>
+
+    <!-- ヘッダー (JSで動的に読み込む) -->
+    <header id="header"></header>
+
+    <main class="cart-container">
+        <h1 class="cart-title">カート</h1>
+
+        <!-- カートアイテム一覧 -->
+        <section class="cart-items">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>アイテム</th>
+                        <th>詳細</th>
+                        <th>数量</th>
+                        <th>価格</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-container">
+                    <!-- JSでカート内の商品を挿入 -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 小計・送料・合計 -->
+        <section class="cart-summary">
+            <table class="summary-table">
+                <tr>
+                    <td>小計</td>
+                    <td id="subtotal">¥0</td>
+                </tr>
+                <tr>
+                    <td>割引金額</td>
+                    <td id="discount">¥0</td>
+                </tr>
+                <tr>
+                    <td>送料</td>
+                    <td id="shipping">¥700</td>
+                </tr>
+                <tr class="total-row">
+                    <td>合計</td>
+                    <td id="total-price">¥0</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 配送先住所 -->
+        <section class="shipping-address">
+            <h2>配送先住所</h2>
+            <div class="address-box" id="shipping-address">
+                <!-- JSで配送先を挿入 -->
+            </div>
+        </section>
+
+        <!-- カート操作ボタン -->
+        <div class="cart-actions">
+            <button id="update-cart" class="btn">カートを更新する</button>
+            <button id="proceed-checkout" class="btn primary">決済方法に進む</button>
+        </div>
+
+    </main>
+
+    <!-- フッター (JSで動的に読み込む) -->
+    <footer id="footer"></footer>
+
+</body>
+</html>
