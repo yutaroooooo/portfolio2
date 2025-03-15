@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>マイページ</title>
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/mypage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <!-- JavaScriptのファイル -->
+        <script src="../JS/header.js" defer></script>
+        <script src="../JS/footer.js"></script>
+        <script src="../JS/HomeController.js"></script>
+        <script src="../JS/login.js"></script>
+        <script src="../JS/register.js"></script>
+        <script src="../JS/mypage.js" defer></script>
+    </head>
+    
+<body>
+    <header></header>
+
+    <main class="login-container">
+        <h1>LOGIN</h1>
+        <form action="#" method="post">
+            <div class="email-wrapper">
+                <input type="email" name="email" placeholder="メールアドレス" required>
+            </div>
+            <div class="password-wrapper">
+                <input type="password" name="password" placeholder="パスワード" required>
+                <a href="#" class="forgot-password">パスワードをお忘れの方</a>
+            </div>
+
+            <!-- パスワードリセット用のポップアップ -->
+            <div id="forgot-password-popup" class="popup">
+                <div class="popup-content">
+                    <p>登録済みのメールアドレスを入力してください。</p>
+                    <input type="email" id="reset-email" placeholder="メールアドレス">
+                    <p>新しいパスワードを入力してください。</p>
+                    <input type="password" id="reset-password" placeholder="新しいパスワード">
+                    <input type="password" id="reset-password-confirm" placeholder="新しいパスワード（確認）">
+                    <p id="reset-error-message" style="color: red; display: none;"></p>
+                    <button id="reset-password-btn">送信</button>
+                    <button id="close-popup-btn">キャンセル</button>
+                </div>
+</div>
+        </form>
+        <div class="maypage-btn">
+            <p id="error-message" style="color: red; display: none;">メールアドレスとパスワードを入力してください。</p>
+            <button type="button" class="login-btn" id="login-btn">LOGIN</button>
+            <div class="divider">OR</div>
+            <button class="register-btn" onclick="location.href='../HTML/register.html'">
+                新規会員登録
+            </button>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
