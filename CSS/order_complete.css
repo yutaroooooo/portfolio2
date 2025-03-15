@@ -1,0 +1,59 @@
+/* ✅ お支払い完了ページのレイアウト */
+.order-complete-container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 145px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.order-complete-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.order-complete-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* ✅ ボタンスタイル */
+.order-complete-actions {
+    display: flex;
+    justify-content: center; /* 🔹 ボタンを中央に配置 */
+    align-items: center; /* 🔹 高さ方向も中央揃え */
+    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px; /* 🔹 ボタンの幅を適切に制限 */
+    margin: 0 auto; /* 🔹 コンテナ自体を中央に */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%; /* 🔹 ボタンの幅を統一 */
+    max-width: 250px; /* 🔹 ボタンの最大幅を制限 */
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.btn.primary {
+    background-color: #000dff;
+}
+
+.btn.primary:hover {
+    background-color: #000bcc;
+}
