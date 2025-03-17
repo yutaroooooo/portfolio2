@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("header.js loaded");
+    console.log("✅ header.js loaded");
 
     function setupHamburgerMenu() {
         const menuToggle = document.getElementById("menu-toggle");
@@ -42,11 +42,21 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 console.error("❌ ハンバーガーメニューのマイページボタンが見つかりません");
             }
+
+            // ✅ ハンバーガーメニューの「FAVORITESボタン」を設定（マイページボタンと同じロジック）
+            const hamburgerFavoriteBtn = document.getElementById("hamburger-favorite-btn");
+            if (hamburgerFavoriteBtn) {
+                hamburgerFavoriteBtn.addEventListener("click", function () {
+                    window.location.href = "../HTML/favorite_list.html";
+                });
+            } else {
+                console.error("❌ ハンバーガーメニューの『お気に入り』ボタンが見つかりません");
+            }
         }, 500);
     }
 
     function setupCartButton() {
-        const cartButton = document.getElementById("cart-link"); // カートボタン
+        const cartButton = document.getElementById("cart-link");
         if (cartButton) {
             cartButton.addEventListener("click", function () {
                 console.log("🛒 カートボタンがクリックされました");
@@ -55,6 +65,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         } else {
             console.error("❌ カートボタンが見つかりません");
+        }
+    }
+
+    function setupFavoriteButtons() {
+        // ✅ ヘッダーの「お気に入り」ボタン
+        const favoriteIcon = document.querySelector(".fa-heart");
+        if (favoriteIcon) {
+            favoriteIcon.addEventListener("click", function () {
+                console.log("💖 ヘッダーの『お気に入り』アイコンがクリックされました");
+                window.location.href = "../HTML/favorite_list.html";
+            });
+        } else {
+            console.error("❌ ヘッダーの『お気に入り』アイコンが見つかりません");
         }
     }
 
@@ -67,21 +90,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then(data => {
                     header.innerHTML = data;
                     setupHamburgerMenu();
-                    checkLoginStatus();
-                    setupCartButton(); // ✅ カートボタンの処理を追加
+                    checkLoginStatus();  // ✅ ここで `hamburger-favorite-btn` も設定される
+                    setupCartButton();
+                    setupFavoriteButtons();
                 })
                 .catch(error => console.error("❌ ヘッダーの読み込みに失敗しました", error));
         } else {
             setupHamburgerMenu();
-            checkLoginStatus();
-            setupCartButton(); // ✅ カートボタンの処理を追加
+            checkLoginStatus();  // ✅ ここで `hamburger-favorite-btn` も設定される
+            setupCartButton();
+            setupFavoriteButtons();
         }
     }
 
     loadHeader();
 });
 
-// **カートデータを取得**
+// ✅ カートデータを取得
 function getCart() {
     return JSON.parse(localStorage.getItem("cart")) || [];
 }

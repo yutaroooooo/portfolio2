@@ -68,7 +68,7 @@ nav {
     z-index: 100; /* 必要なら調整 */
 }
 
-.cart-link {
+.favorite-link,.cart-link {
     color: rgb(255, 255, 255); /* カートアイコンの色 */
     text-decoration: none; /* 下線を消す */
 }

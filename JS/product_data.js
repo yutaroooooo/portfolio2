@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             console.log("取得した商品データ:", product);
 
+            // ✅ 商品IDを `data-id` にセット
+            const productDetailContainer = document.querySelector(".product-detail-container");
+            if (productDetailContainer) {
+                productDetailContainer.dataset.id = productId;
+            } else {
+                console.error("❌ product-detail-container の要素が見つかりません");
+            }
+
             // HTML要素の取得
             const productBrand = document.getElementById("product-brand");
             const productName = document.getElementById("product-name");
@@ -41,11 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
             productMaterial.textContent = product.material;
             productOrigin.textContent = product.origin;
 
-            // `id` から商品番号を取得
-            const productIdNum = parseInt(product.id.replace("product-", ""), 10);
-
             // **セール対象の商品なら赤文字を適用**
-            if (productIdNum >= 8 && productIdNum <= 16) {
+            if (parseInt(product.id.replace("product-", ""), 10) >= 8) {
                 productPrice.style.color = "red";
                 productPrice.style.fontWeight = "bold";
             }
@@ -82,8 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 colorDot.addEventListener("click", function () {
                     document.querySelectorAll(".color-dot").forEach(dot => dot.classList.remove("selected"));
                     colorDot.classList.add("selected");
-
-                    // **選択したカラーを可視化**
                     selectedColorText.textContent = color.name;
                 });
 
@@ -100,8 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 sizeButton.addEventListener("click", () => {
                     document.querySelectorAll(".size-btn").forEach(btn => btn.classList.remove("selected"));
                     sizeButton.classList.add("selected");
-
-                    // **選択したサイズを可視化**
                     selectedSizeText.textContent = size.size;
                 });
 
@@ -140,14 +141,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     size: selectedSizeElement.textContent.trim(),
                     quantity: 1,
                     price: parseInt(product.price.replace("¥", "").replace(",", "")),
-                    image: product.images[0] // メイン画像
+                    image: product.images[0]
                 };
 
-                // **カートに追加**
                 addToCart(cartItem);
                 alert("カートに追加しました！");
-
-                // **カートページに遷移**
                 window.location.href = "cart.html";
             });
         })
@@ -166,7 +164,6 @@ function saveCart(cart) {
 function addToCart(product) {
     let cart = getCart();
 
-    // 既にカートにあるかチェック
     let existingProduct = cart.find(item =>
         item.id === product.id && 
         item.color === product.color && 
