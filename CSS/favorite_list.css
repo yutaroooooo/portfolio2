@@ -91,12 +91,9 @@
 }
 
 /* 📌 削除ボタン */
-.btn.remove-favorite {
-    background-color: #cc0000;
-}
-
-.btn.remove-favorite:hover {
-    background-color: #a00000;
+.remove-favorite-btn {
+    background-color: #000000;
+    color: #fff;
 }
 
 /* 📌 お気に入りがない場合のメッセージ */

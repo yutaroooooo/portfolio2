@@ -51,3 +51,19 @@ function displayFavoriteItems() {
         });
     });
 }
+
+// ✅ お気に入り解除処理
+function removeFavorite(productId) {
+    let favoriteItems = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    // ✅ 指定したIDの商品を除外
+    favoriteItems = favoriteItems.filter(item => item.id !== productId);
+
+    // ✅ 更新後のリストを保存
+    localStorage.setItem("favorites", JSON.stringify(favoriteItems));
+
+    console.log(`🗑️ 商品ID: ${productId} をお気に入りから削除しました`);
+
+    // ✅ 再表示
+    displayFavoriteItems();
+}
