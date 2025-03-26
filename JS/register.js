@@ -5,64 +5,67 @@ document.addEventListener("DOMContentLoaded", () => {
 
     populateBirthDateOptions(); // ✅ 生年月日のプルダウンを生成
 
-    const createAccountBtn = document.getElementById("create-account-btn"); // ✅ 修正
+    const createAccountBtn = document.getElementById("create-account-btn");
 
     if (!createAccountBtn) {
         console.error("❌ create-account-btn が見つかりません");
         return;
     }
 
-    createAccountBtn.addEventListener("click", function () {
+    createAccountBtn.addEventListener("click", () => {
+        if (!validateForm()) {
+            return; // バリデーションエラーがあれば処理を中断
+        }
+
+        // ✅ ユーザー情報を保存
         const lastName = document.getElementById("last_name").value;
         const firstName = document.getElementById("first_name").value;
         const email = document.getElementById("email").value;
         const passwordValue = document.getElementById("password").value;
-        const confirmPasswordValue = document.getElementById("confirm_password").value;
         const year = document.getElementById("year").value;
         const month = document.getElementById("month").value;
         const day = document.getElementById("day").value;
         const gender = document.querySelector('input[name="gender"]:checked')?.value || "";
 
-        console.log("✅ 入力された情報:", { lastName, firstName, email, passwordValue, confirmPasswordValue, year, month, day, gender });
-
-        let isValid = true;
-
-        if (!isValidInput(lastName)) {
-            console.error("❌ 姓が入力されていません");
-            isValid = false;
-        }
-        if (!isValidInput(firstName)) {
-            console.error("❌ 名が入力されていません");
-            isValid = false;
-        }
-        if (!isValidEmail(email)) {
-            console.error("❌ 無効なメールアドレスです");
-            isValid = false;
-        }
-        if (!isPasswordMatch(passwordValue, confirmPasswordValue)) {
-            console.error("❌ パスワードが一致しません");
-            isValid = false;
-        }
-        if (!isValidBirthDate(year, month, day)) {
-            console.error("❌ 生年月日が正しく選択されていません");
-            isValid = false;
-        }
-
-        if (!isValid) {
-            console.warn("⚠️ フォームにエラーがあります");
-            return;
-        }
-
-        console.log("🎉 フォームが正常に送信されました！");
-        alert("登録が完了しました！");
+        console.log("🎉 登録情報:", { lastName, firstName, email, passwordValue, year, month, day, gender });
 
         let users = JSON.parse(localStorage.getItem("users")) || [];
         users.push({ lastName, firstName, email, password: passwordValue, birthDate: `${year}-${month}-${day}`, gender });
         localStorage.setItem("users", JSON.stringify(users));
 
+        alert("登録が完了しました！");
         window.location.href = "../HTML/accountpage.html";
     });
 });
+
+/**
+ * フォームのバリデーションを行い、エラーがあればアラートを表示する
+ * @returns {boolean} バリデーション成功なら `true`、エラーがあれば `false`
+ */
+function validateForm() {
+    const lastName = document.getElementById("last_name").value;
+    const firstName = document.getElementById("first_name").value;
+    const email = document.getElementById("email").value;
+    const passwordValue = document.getElementById("password").value;
+    const confirmPasswordValue = document.getElementById("confirm_password").value;
+    const year = document.getElementById("year").value;
+    const month = document.getElementById("month").value;
+    const day = document.getElementById("day").value;
+
+    let errorMessages = [];
+
+    if (!isValidInput(lastName)) errorMessages.push("❌ 姓が入力されていません");
+    if (!isValidInput(firstName)) errorMessages.push("❌ 名が入力されていません");
+    if (!isValidEmail(email)) errorMessages.push("❌ 無効なメールアドレスです");
+    if (!isPasswordMatch(passwordValue, confirmPasswordValue)) errorMessages.push("❌ パスワードが一致しません");
+    if (!isValidBirthDate(year, month, day)) errorMessages.push("❌ 生年月日が正しく選択されていません");
+
+    if (errorMessages.length > 0) {
+        alert(errorMessages.join("\n")); // すべてのエラーをまとめて表示
+        return false;
+    }
+    return true;
+}
 
 /**
  * 生年月日のプルダウンを生成する関数

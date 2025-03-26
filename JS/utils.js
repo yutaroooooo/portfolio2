@@ -33,12 +33,12 @@ export function saveCart(cart) {
 }
 
 /**
- * 入力値が空かどうかチェックする関数
- * @param {string} value - 入力値
- * @returns {boolean} - 空なら `false` を返す
+ * 入力値が空かどうかチェックする関数（複数の値を同時にチェック可能）
+ * @param {...string} values - 文字列の入力値（可変長引数）
+ * @returns {boolean} - 一つでも空なら `true`（空でないなら `false`）
  */
-export function isValidInput(value) {
-    return value.trim() !== "";
+export function isEmpty(...values) {
+    return values.some(value => !value.trim());
 }
 
 /**
