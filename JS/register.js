@@ -1,4 +1,4 @@
-import { isValidInput, isPasswordMatch, isValidEmail, isValidBirthDate } from "./utils.js";
+import { isEmpty, isPasswordMatch, isValidEmail, isValidBirthDate } from "./utils.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("✅ register.js が読み込まれました");
@@ -54,11 +54,21 @@ function validateForm() {
 
     let errorMessages = [];
 
-    if (!isValidInput(lastName)) errorMessages.push("❌ 姓が入力されていません");
-    if (!isValidInput(firstName)) errorMessages.push("❌ 名が入力されていません");
-    if (!isValidEmail(email)) errorMessages.push("❌ 無効なメールアドレスです");
-    if (!isPasswordMatch(passwordValue, confirmPasswordValue)) errorMessages.push("❌ パスワードが一致しません");
-    if (!isValidBirthDate(year, month, day)) errorMessages.push("❌ 生年月日が正しく選択されていません");
+    if (isEmpty(lastName)) {
+        errorMessages.push("❌ 姓が入力されていません");
+    }
+    if (isEmpty(firstName)) {
+        errorMessages.push("❌ 名が入力されていません");
+    }
+    if (!isValidEmail(email)) {
+        errorMessages.push("❌ 無効なメールアドレスです");
+    }
+    if (!isPasswordMatch(passwordValue, confirmPasswordValue)) {
+        errorMessages.push("❌ パスワードが一致しません");
+    }
+    if (!isValidBirthDate(year, month, day)) {
+        errorMessages.push("❌ 生年月日が正しく選択されていません");
+    }
 
     if (errorMessages.length > 0) {
         alert(errorMessages.join("\n")); // すべてのエラーをまとめて表示
