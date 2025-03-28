@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アカウントページ</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/HomeController.js" defer></script>
+    <script src="../JS/logout.js"></script>
+    <script src="../JS/redirect.js"></script>
+</head>
+<body>
+    <!-- ヘッダーを動的に読み込む -->
+    <header></header>
+
+    <main class="account-container">
+        <h1>MY PAGE</h1>
+        <div class="point-box">
+            <p>利用可能ポイント</p>
+            <p class="point">0<span>pt</span></p>
+        </div>
+        <ul class="account-menu">
+            <li><a href="../HTML/edit_profile.html">会員情報編集</a></li>
+            <li><a href="../HTML/address.html">配送先情報追加/編集</a></li>
+            <li><a href="../HTML/order_history.html">注文履歴</a></li>
+            <li><a href="../HTML/withdraw.html">退会手続き</a></li>
+        </ul>
+        <button id="logout-btn" class="logout-btn">ログアウト</button>
+        <!-- ログアウト確認ポップアップ -->
+        <div id="logout-popup">
+            <div>
+                <p>本当にログアウトしますか？</p>
+                <button id="popup-ok-btn">OK</button>
+                <button id="popup-cancel-btn">キャンセル</button>
+            </div>
+        </div>
+</div>
+    </main>
+
+    <!-- フッターを動的に読み込む -->
+    <footer></footer>
+</body>
+</html>

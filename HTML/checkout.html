@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購入手続き</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/checkout.js" defer></script>
+</head>
+<body>
+
+    <!-- ヘッダー (JSで動的に読み込む) -->
+    <header id="header"></header>
+
+    <main class="checkout-container">
+        <h1 class="checkout-title">購入手続き</h1>
+
+        <!-- 配送先情報 -->
+        <section class="checkout-section">
+            <h2>配送先情報</h2>
+            <div class="address-box" id="checkout-address">
+                <!-- JSで配送先情報を挿入 -->
+            </div>
+        </section>
+
+        <!-- 支払い方法の選択 -->
+        <section class="checkout-section">
+            <h2>支払い方法</h2>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="credit" checked> クレジットカード</label>
+                <label><input type="radio" name="payment" value="bank"> 銀行振込</label>
+                <label><input type="radio" name="payment" value="cash"> 代引き</label>
+            </div>
+        </section>
+
+        <!-- 注文概要 -->
+        <section class="checkout-section">
+            <h2>注文概要</h2>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>商品</th>
+                        <th>詳細</th>
+                        <th>数量</th>
+                        <th>価格</th>
+                    </tr>
+                </thead>
+                <tbody id="checkout-items-container">
+                    <!-- JSでカート内の商品を挿入 -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">小計</td>
+                        <td id="checkout-subtotal">¥0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">送料</td>
+                        <td id="checkout-shipping">¥700</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3">合計</td>
+                        <td id="checkout-total-price">¥0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- 注文確定ボタン -->
+        <div class="checkout-actions">
+            <button id="confirm-order" class="btn primary">注文を確定する</button>
+        </div>
+
+    </main>
+
+    <!-- フッター (JSで動的に読み込む) -->
+    <footer id="footer"></footer>
+
+</body>
+</html>

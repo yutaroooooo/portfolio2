@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配送先新規追加</title>
+
+     <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/address.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+     <!-- JavaScript -->
+     <script src="../JS/header.js" defer></script>
+     <script src="../JS/footer.js" defer></script>
+     <script src="../JS/HomeController.js" defer></script>
+     <script src="../JS/address.js" defer></script>
+</head>
+
+<header></header>
+
+<main>
+    <h1>配送先新規追加</h1>
+    <form id="address-form">
+        <label for="last-name">姓</label>
+        <input type="text" id="last-name" required>
+
+        <label for="first-name">名</label>
+        <input type="text" id="first-name" required>
+
+        <label for="postal-code">郵便番号</label>
+        <input type="text" id="postal-code" required>
+
+        <label for="prefecture">都道府県</label>
+        <input type="text" id="prefecture" required>
+
+        <label for="city">市区町村</label>
+        <input type="text" id="city" required>
+
+        <label for="street">町・番地</label>
+        <input type="text" id="street" required>
+
+        <label for="building">建物・マンション名</label>
+        <input type="text" id="building">
+
+        <label for="phone">電話番号</label>
+        <input type="text" id="phone" required>
+
+        <button id="address-form-btn">追加</button>
+    </form>
+
+</main>
+
+<footer></footer>
+
+</body>
+</html>

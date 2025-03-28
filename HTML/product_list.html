@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一覧</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/product_list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/product_list.js" defer></script>
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header></header>
+
+    <main class="product-list-container">
+        <h1 class="page-title">商品一覧</h1>
+
+        <!-- フィルター & ソート -->
+        <section class="filter-sort-section">
+            <div class="filter-container">
+                <label for="category-filter">カテゴリー:</label>
+                <select id="category-filter">
+                    <option value="all">すべて</option>
+                    <option value="outer">アウター</option>
+                    <option value="tops">トップス</option>
+                    <option value="bottoms">ボトムス</option>
+                    <option value="accessory">アクセサリー</option>
+                </select>
+
+                <label for="brand-filter">ブランド:</label>
+                <select id="brand-filter">
+                    <option value="all">すべて</option>
+                    <option value="brand1">ブランドA</option>
+                    <option value="brand2">ブランドB</option>
+                    <option value="brand3">ブランドC</option>
+                </select>
+            </div>
+
+            <div class="sort-container">
+                <label for="sort-options">並び替え:</label>
+                <select id="sort-options">
+                    <option value="new">新着順</option>
+                    <option value="price-asc">価格が安い順</option>
+                    <option value="price-desc">価格が高い順</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- 商品一覧 -->
+        <section class="product-grid" id="product-list">
+            <!-- JavaScriptで商品を挿入 -->
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer></footer>
+
+</body>
+</html>

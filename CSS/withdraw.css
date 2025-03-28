@@ -1,0 +1,68 @@
+.withdraw-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 画面全体の高さを確保 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+input[type="email"], 
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 15px;
+}
+
+legend {
+    text-align: left;
+    font-weight: bold;
+}
+
+label input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle; /* チェックボックスの位置をテキストと揃える */
+}
+
+.withdraw-btn {
+    background: #999;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.withdraw-btn:hover {
+    background: #777;
+}
+
+fieldset {
+    text-align: left; /* 左揃えにする */
+    width: 100%;
+}

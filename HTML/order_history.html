@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注文履歴</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/order_history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/order_history.js" defer></script>
+</head>
+<body>
+
+    <!-- ヘッダー (JSで動的に読み込む) -->
+    <header id="header"></header>
+
+    <main class="order-history-container">
+        <h1 class="order-history-title">注文履歴</h1>
+
+        <!-- 注文リスト -->
+        <section class="order-list">
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>注文番号</th>
+                        <th>購入日</th>
+                        <th>合計金額</th>
+                        <th>注文詳細</th>
+                    </tr>
+                </thead>
+                <tbody id="order-history-body">
+                    <!-- JSで注文履歴を挿入 -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- フッター (JSで動的に読み込む) -->
+    <footer id="footer"></footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>退会手続き</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/withdraw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/footer.js" defer></script>
+    <script src="../JS/HomeController.js" defer></script>
+    <script src="../JS/withdraw.js" defer></script>
+</head>
+<body>
+
+    <header></header>
+
+    <main class="withdraw-container">
+        <h2>退会手続き</h2>
+        <form id="withdraw-form">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" required>
+
+            <label for="password">パスワード</label>
+            <input type="password" id="password" required>
+
+            <fieldset>
+                <legend>退会確認事項</legend>
+                <label>
+                    <input type="checkbox" required>
+                    会員特典及び、保有しているポイントは全て無効になります。
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" required>
+                    退会後、1週間ほどお客様にメールまたはDMが届く可能性がございます。
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" required>
+                    既にご注文いただきました商品は、退会後も発送を行わせていただきます。
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" required>
+                    退会後、ご登録内容の確認・変更はできなくなります。
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" required>
+                    全ての項目を確認しましたか？
+                </label>
+            </fieldset>
+            
+            <button type="submit" class="withdraw-btn">退会する</button>
+        </form>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>

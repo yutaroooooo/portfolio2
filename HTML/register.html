@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新規会員登録</title>
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/mypage.css">
+        <link rel="stylesheet" href="../CSS/register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+        <!-- JavaScriptのファイル -->
+        <script src="../JS/header.js" defer></script>
+        <script src="../JS/footer.js"></script>
+        <script src="../JS/HomeController.js"></script>
+        <script src="../JS/register.js" type="module" defer></script>
+        <script src="../JS/utils.js" type="module" defer></script>
+    </head>
+    
+<body>
+    <header></header>
+    <main>
+        <h1>新規会員登録</h1>
+        <form id="registerForm">
+            <label for="last_name">姓</label>
+            <input type="text" id="last_name" required>
+
+            <label for="first_name">名</label>
+            <input type="text" id="first_name" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" required>
+
+            <label for="password">パスワード</label>
+            <input type="password" id="password" required>
+            <p style="color: gray; font-size: 14px;">
+               ※8文字以上、大文字・小文字・数字・記号を1つ以上含めてください
+            </p>
+
+            <label for="confirm_password">パスワード（確認）</label>
+            <input type="password" id="confirm_password" required>
+            <p id="passwordError" style="color: red; display: none;">
+               ※パスワードが一致しません
+            </p>
+
+            <label for="birth_date">生年月日</label>
+                <div class="birthdate-container">
+                  <select id="year"></select>
+                  <select id="month"></select>
+                  <select id="day"></select>
+                </div>
+            
+            <label>性別</label>
+                <div class="gender-container">
+                    <label><input type="radio" name="gender" value="female"> 女性</label>
+                    <label><input type="radio" name="gender" value="male"> 男性</label>
+                    <label><input type="radio" name="gender" value="other"> その他</label>
+                </div>
+
+            <button type="button" class="create-account-btn" id="create-account-btn">アカウントを作成</button>
+
+            <!-- 登録完了ポップアップ -->
+        <div id="registerPopup" class="popup">
+           <div class="popup-content">
+                <p>登録が完了しました！</p>
+                <button id="popupOkBtn">OK</button>
+           </div>
+</div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

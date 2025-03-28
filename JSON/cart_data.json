@@ -1,0 +1,492 @@
+{
+  "products": [
+    {
+      "id": "product-001",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-002",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-003",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-004",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-005",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-006",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-007",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-008",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-009",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-010",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-011",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-012",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-013",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-014",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-015",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    },
+    {
+      "id": "product-016",
+      "brand": "ブランドA",
+      "name": "ブランクスウェット",
+      "price": "¥5,000",
+      "images": [
+        "../IMG/スクリーンショット 2025-02-24 13.45.53.png",
+        "../IMG/スクリーンショット 2025-02-24 13.45.45.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.09.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.14.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.20.png",
+        "../IMG/スクリーンショット 2025-02-24 13.46.34.png"
+      ],
+      "colors": [
+        { "name": "ブラック", "code": "#000000" },
+        { "name": "グレー", "code": "#9fa0a0" },
+        { "name": "ブルー", "code": "#2361ad" },
+        { "name": "イエロー", "code": "#fff47e" },
+        { "name": "ピンク", "code": "#f3b4d0" },
+        { "name": "グリーン", "code": "#2a8339" }
+      ],
+      "sizes": [
+        { "size": "S", "length": "65cm", "width": "48cm", "sleeve": "60cm" },
+        { "size": "M", "length": "68cm", "width": "51cm", "sleeve": "62cm" },
+        { "size": "L", "length": "71cm", "width": "54cm", "sleeve": "64cm" },
+        { "size": "XL", "length": "74cm", "width": "57cm", "sleeve": "67cm" }
+      ],
+      "onSale": true,
+      "material": "コットン100%",
+      "origin": "日本"
+    }
+  ]
+}
