@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>顧客詳細</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/customer-detail.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../js/data.js" defer></script>
+  <script src="../js/customer-detail.js" defer></script>
+  <script src="../js/sidebar-loader.js" defer></script>
+</head>
+<body class="detail-layout">
+  <div id="sidebar-container"></div>
+
+  <main class="main-content">
+    <header class="page-header">
+      <h1>顧客詳細</h1>
+    </header>
+
+    <section class="customer-header">
+      <div class="avatar-wrapper">
+        <img src="../img/avatar.png" alt="Avatar" class="avatar" />
+        <span class="customer-id-badge" id="customer-id">ID: 取得中...</span>
+      </div>
+      <div class="customer-meta">
+        <h2 id="customer-email-header">メールアドレス</h2>
+      </div>
+    </section>
+
+    <section class="customer-cards">
+      <div class="card" id="basic-info">
+        <h3><i class="fas fa-user"></i> 基本情報</h3>
+        <ul>
+            <li><strong>メールアドレス:</strong> <span id="customer-email-detail"></span></li>
+            <li><strong>電話番号:</strong> <span id="customer-phone"></span></li>
+            <li><strong>名前:</strong> <span id="customer-name"></span></li>
+            <li><strong>住所:</strong> <span id="customer-address"></span></li>
+            <li><strong>注文数:</strong> <span id="customer-orders"></span></li>            
+        </ul>
+      </div>
+
+      <div class="card" id="payment-info">
+        <h3><i class="fas fa-credit-card"></i> 決済情報</h3>
+        <ul>
+            <li><strong>クレジットカード:</strong> <span id="customer-card"></span></li>
+            <li><strong>注文履歴:</strong> <span id="customer-history"></span></li>
+            <li><strong>決済待ち:</strong> <span id="customer-pending"></span></li>
+            <li><strong>国/地域:</strong> <span id="customer-region"></span></li>
+            <li><strong>未払い期限:</strong> <span id="customer-deadline"></span></li>
+            <li><strong>返金:</strong> <span id="customer-refund"></span></li>
+            <li><strong>総額:</strong> <span id="customer-payment-total"></span></li>
+        </ul>
+        <div class="history-button-wrapper">
+          <button class="history-button">請求書作成</button>
+          <button class="history-button">請求書再送</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button class="delete-button">アカウント削除</button>
+    </section>
+  </main>
+</body>
+</html>
