@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>顧客編集</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/customer-edit.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../js/customer-edit.js" defer></script>
+  <script src="../js/sidebar-loader.js" defer></script>
+</head>
+<body class="edit-layout">
+  <div id="sidebar-container"></div>
+
+  <main class="main-content">
+    <header class="page-header">
+      <h1>顧客情報編集</h1>
+    </header>
+
+    <section class="customer-header">
+      <div class="avatar-wrapper">
+        <img src="../img/avatar.png" alt="Avatar" class="avatar" />
+        <span class="customer-id-badge" id="customer-id">ID: #123456</span>
+      </div>
+    </section>
+
+    <form class="edit-form">
+      <div class="form-section">
+        <h3><i class="fas fa-user"></i> 基本情報</h3>
+        <label>メールアドレス<input type="email" id="email" required /></label>
+        <label>電話番号<input type="tel" id="phone" /></label>
+        <label>名前<input type="text" id="name" /></label>
+        <label>住所<textarea id="address"></textarea></label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="save-button">保存する</button>
+        <button type="button" class="cancel-button" onclick="window.history.back();">キャンセル</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

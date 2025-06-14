@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顧客一覧</title>
+    <link rel="stylesheet" href="/customer-management/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- スクリプト -->
+    <script src="../js/sidebar-loader.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+
+    <!-- サイドバーを読み込むコンテナ -->
+    <div id="sidebar-container"></div>
+
+    <!-- メインコンテンツ -->
+    <main class="content">
+        <header>
+            <h1>顧客一覧</h1>
+            <div class="actions">
+                <button class="btn">+ 追加</button>
+            </div>
+        </header>
+
+        <!-- 検索とフィルタ -->
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="顧客を検索...">
+            <select>
+                <option>新着順</option>
+                <option>注文数順</option>
+                <option>合計金額順</option>
+            </select>
+        </div>
+
+        <!-- 顧客リスト -->
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>名前</th>
+                    <th>住所</th>
+                    <th>注文数</th>
+                    <th>合計金額</th>
+                    <th>編集</th>
+                </tr>
+            </thead>
+            <tbody id="customerTableBody">
+                <!-- JavaScriptでデータを動的に追加 -->
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>

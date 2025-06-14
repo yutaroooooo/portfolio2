@@ -1,0 +1,37 @@
+<!-- sidebar.html -->
+<aside class="sidebar">
+    <div class="logo-section">
+      <img src="/IMG/mainlogo.png" alt="ロゴ" class="logo">
+      <div class="logo-text">
+        <h2>OY</h2>
+        <h3>Production</h3>
+      </div>
+    </div>
+  
+    <nav class="menu-section">
+      <p class="section-title">管理ページ</p>
+  
+      <div class="menu-group">
+        <div class="menu-group-header" onclick="toggleMenu()">
+          <span class="menu-icon"><i class="fas fa-users"></i></span>
+          <span class="menu-title">顧客管理</span>
+          <span class="menu-arrow" id="arrow">▼</span>
+        </div>
+        <ul class="submenu" id="submenu" style="display: none;">
+          <li><a href="/customer-management/html/customer.html">顧客一覧</a></li>
+          <li><a href="/customer-management/html/customer-detail.html">顧客詳細</a></li>
+          <li><a href="/customer-management/html/customer-edit.html">顧客情報編集</a></li>
+        </ul>
+      </div>
+  
+      <div class="menu-item">
+        <span class="menu-icon"><i class="fas fa-box-open"></i></span>
+        <span class="menu-title">アイテム管理</span>
+      </div>
+  
+      <div class="menu-item">
+        <span class="menu-icon"><i class="fas fa-shopping-cart"></i></span>
+        <span class="menu-title">注文管理</span>
+      </div>
+    </nav>
+  </aside>
